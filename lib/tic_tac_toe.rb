@@ -52,7 +52,9 @@ class TicTacToe
     move_location = input_to_index(move_location)
     if valid_move?(move_location)
       move(move_location, current_player)
+      display_board
+    else
+      turn
     end
-    display_board
   end
 end
