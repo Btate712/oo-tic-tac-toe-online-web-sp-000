@@ -53,5 +53,6 @@ class TicTacToe
     if valid_move?(move_location)
       move(move_location, current_player)
     end
+    display_board
   end
 end
