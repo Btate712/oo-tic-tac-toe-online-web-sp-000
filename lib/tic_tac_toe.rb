@@ -88,5 +88,6 @@ class TicTacToe
     until over?
       turn
     end
+    puts won? "Congratulations #{winner}!" : "Cat's Game!"
   end
 end
