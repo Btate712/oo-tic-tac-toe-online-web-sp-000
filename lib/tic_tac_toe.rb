@@ -76,5 +76,5 @@ class TicTacToe
     full? && !won?
   end
 
-  
+
 end
