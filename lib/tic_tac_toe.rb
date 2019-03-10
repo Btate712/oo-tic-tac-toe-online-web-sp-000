@@ -45,4 +45,12 @@ class TicTacToe
   def current_player
     self.turn_count.even? ? "X" : "O"
   end
+
+  def turn
+    puts "Please choose the location of your next move (1-9)"
+    move_location = gets.strip
+    if valid_move?(input_to_index(move_location))
+      move(move_location, current_player)
+    end
+  end
 end
